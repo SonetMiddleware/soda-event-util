@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "types": ["jest", "chrome"],
+    "skipLibCheck": true,
+    "declaration": true,
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "strict": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@@/*": ["src/.umi/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": true
+  },
+  "exclude": ["bin", "build", "node_modules", "./dist"],
+  "include": ["src/**/*"]
+}
