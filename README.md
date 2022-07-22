@@ -1,3 +1,3 @@
 # Soda event util
 
-Index initialize script for Soda plugins. To be replaced by auto CI/CD scripts.
+Hook with inbound event mechanism, code reference from injected script of Maskbook, by DimensionDev team.

@@ -1,5 +1,14 @@
 export default {
-  entry: 'src/index.ts',
-  // esm: 'rollup'
-  umd: true
+  umd: { globals: {} },
+  cjs: 'rollup',
+  esm: 'rollup',
+  entry: ['src/main/index.ts', 'src/sdk/index.ts'],
+  overridesByEntry: {
+    'src/main/index.ts': {
+      file: 'inject-hook'
+    },
+    'src/sdk/index.ts': {
+      file: 'sdk'
+    }
+  }
 }
